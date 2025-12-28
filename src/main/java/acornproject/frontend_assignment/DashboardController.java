@@ -1,13 +1,13 @@
 package acornproject.frontend_assignment;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class DashboardController {
 
     @GetMapping("/dash")
-    public String Dashboard(){
-        return "Dashboard frontend";
+    public String index(){
+        return "index";
     }
 }
