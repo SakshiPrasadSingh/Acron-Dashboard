@@ -19,7 +19,7 @@
     <div class="row">
 
         <!-- Sidebar -->
-        <div class="col-3 sidebar-wrapper d-flex">
+        <div class="col-2 sidebar-wrapper d-flex">
 
             <!-- ICON RAIL -->
             <div class="icon-rail d-flex flex-column align-items-center">
@@ -121,45 +121,194 @@
         </div>
 
         <!-- Main Content -->
-        <main class="col-9 main-content">
+        <main class="col-10 main-content">
 
-            <!-- TOP HEADER -->
-            <div class="top-header d-flex justify-content-between align-items-center">
+            <!-- TOP UTILITY BAR -->
+            <div class="top-utility d-flex justify-content-between align-items-center mb-3">
 
                 <!-- Search -->
-                <div class="search-wrapper">
+                <div class="search-pill">
                     <i class="bi bi-search"></i>
-                    <input type="text" placeholder="Try searching ‘insights’">
+                    <input type="text" placeholder='Try searching "insights"'>
                 </div>
 
-                <!-- Right Actions -->
-                <div class="header-actions d-flex align-items-center gap-3">
+                <!-- Right icons -->
+                <div class="topbar-actions d-flex align-items-center gap-2">
 
-                    <!-- Avatars -->
-                    <div class="avatars">
-                        <img src="https://i.pravatar.cc/28?img=1">
-                        <img src="https://i.pravatar.cc/28?img=2">
-                        <img src="https://i.pravatar.cc/28?img=3">
-                        <div class="avatar more">+</div>
+                    <!-- Combined menu + avatar pill -->
+                    <div class="menu-avatar-pill">
+                        <i class="bi bi-list"></i>
+                        <img src="https://i.pravatar.cc/40?img=12" alt="User">
                     </div>
 
-                    <!-- Toggle -->
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" checked>
+                    <!-- Plus button -->
+                    <div class="add-circle-btn">
+                        <i class="bi bi-plus"></i>
                     </div>
-
-                    <!-- Date -->
-                    <div class="date-range">
-                        Sep 1 - Nov 30, 2023
-                        <i class="bi bi-chevron-down"></i>
-                    </div>
-
-                    <!-- Icons -->
-                    <div class="icon-btn"><i class="bi bi-sliders"></i></div>
-                    <div class="icon-btn"><i class="bi bi-download"></i></div>
-                    <div class="icon-btn"><i class="bi bi-share"></i></div>
 
                 </div>
+
+            </div>
+
+            <!-- HEADER CARD -->
+            <div class="header-card">
+
+                <!-- Top row -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+
+                    <!-- People chips -->
+                    <div class="chips">
+                        <div class="icon-btn">+</div>
+                        <div class="chip">
+                            <img src="https://i.pravatar.cc/18?img=1"> Armin A.
+                        </div>
+                        <div class="chip">
+                            <img src="https://i.pravatar.cc/18?img=2"> Eren Y.
+                        </div>
+                        <div class="chip">
+                            <img src="https://i.pravatar.cc/18?img=3"> Mikasa A.
+                        </div>
+                        <div class="c-logo"><span>C</span></div>
+                    </div>
+
+                    <!-- Header icons -->
+                    <div class="header-icons">
+                        <div class="icon-btn"><i class="bi bi-sliders"></i></div>
+                        <div class="icon-btn"><i class="bi bi-download"></i></div>
+                        <div class="icon-btn"><i class="bi bi-share"></i></div>
+                    </div>
+                </div>
+
+                <!-- Bottom row -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="new-report">New report</h2>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" checked>
+                        </div>
+                        <span class="timeframe">Timeframe</span>
+
+                        <div class="date-range">
+                            Sep 1 - Nov 30, 2023
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="revenue-section d-flex justify-content-between align-items-start">
+
+                    <!-- LEFT: Revenue info -->
+                    <div class="revenue-left">
+                        <h6 class="revenue-title">Revenue</h6>
+                        <div class="revenue-amount">
+                            <span class="main-amount">$528,976</span>
+                            <span class="decimal">.82</span>
+
+                            <span class="badge-up"> ^7.9%</span>
+
+                            <span class="badge-pink">$27,335.09</span>
+                        </div>
+
+                        <div class="revenue-sub">
+                            vs prev. $501,641.73 &nbsp; Jun 1 - Aug 31, 2023
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT: Cards -->
+                    <div class="revenue-cards d-flex gap-3">
+
+                        <!-- Top sales -->
+                        <div class="stat-card light">
+                            <div class="card-title">Top sales</div>
+                            <div class="card-value">72</div>
+                            <div class="card-user">
+                                <img src="https://i.pravatar.cc/24?img=3">
+                                Mikasa
+                                <span class="arrow">›</span>
+                            </div>
+                        </div>
+
+                        <!-- Best deal -->
+                        <div class="stat-card dark">
+                            <div class="card-title">
+                                Best deal
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <div class="card-value">$42,300</div>
+                            <div class="card-user">
+                                Rolf Inc.
+                                <span class="arrow">›</span>
+                            </div>
+                        </div>
+
+                        <!-- Deals -->
+                        <div class="mini-card outline-grey">
+                            <div class="mini-title">Deals</div>
+                            <div class="mini-pill">256</div>
+                            <div class="mini-foot">
+                                <i class="bi bi-chevron-down"></i> 5
+                            </div>
+                        </div>
+
+                        <!-- Value -->
+                        <div class="mini-card outline-pink">
+                            <div class="mini-title">Value</div>
+                            <div class="mini-pill pink">528k</div>
+                            <div class="mini-foot">
+                                <i class="bi bi-arrow-up"></i> 7.9%
+                            </div>
+                        </div>
+
+                        <!-- Win rate -->
+                        <div class="mini-card outline-grey">
+                            <div class="mini-title">Win rate</div>
+                            <div class="mini-pill">44%</div>
+                            <div class="mini-foot">
+                                <i class="bi bi-arrow-up"></i> 1.2%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contribution Row -->
+                <div class="contribution-row">
+
+                    <!-- Contribution Bar -->
+                    <div class="contribution-bar">
+
+                        <div class="contrib-item w-lg">
+                            <img src="https://i.pravatar.cc/28?img=1">
+                            <span class="amount">$209,633</span>
+                            <span class="percent">39.63%</span>
+                        </div>
+
+                        <div class="contrib-item w-md">
+                            <img src="https://i.pravatar.cc/28?img=3">
+                            <span class="amount">$156,841</span>
+                            <span class="percent">29.65%</span>
+                        </div>
+
+                        <div class="contrib-item w-sm">
+                            <img src="https://i.pravatar.cc/28?img=5">
+                            <span class="amount">$117,115</span>
+                            <span class="percent">22.14%</span>
+                        </div>
+
+                        <!-- C LOGO ITEM -->
+                        <div class="circle-logo">C</div>
+                        <span class="amount">$45,386</span>
+                        <span class="percent">8.58%</span>
+
+
+                    </div>
+
+                    <button class="details-btn">Details</button>
+
+                </div>
+
             </div>
 
         </main>

@@ -134,80 +134,417 @@ body {
     cursor: pointer;
 }
 
-/* TOP HEADER */
-.top-header {
-    background: white;
-    padding: 14px 18px;
-    border-radius: 20px;
-    margin-bottom: 20px;
+/* TOP UTILITY BAR */
+.top-utility {
+    padding: 8px 0;
 }
 
-/* Search */
-.search-wrapper {
+.search-pill {
+    width: 420px;
+    background: white;
+    border-radius: 999px;
+    padding: 5px 10px;
     display: flex;
     align-items: center;
-    background: #f6f4f3;
-    padding: 8px 12px;
-    border-radius: 12px;
-    width: 320px;
 }
 
-.search-wrapper i {
+.search-pill i {
     color: #888;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
-.search-wrapper input {
+.search-pill input {
     border: none;
-    background: transparent;
     outline: none;
     width: 100%;
+    background: transparent;
 }
 
-/* Avatars */
-.avatars {
+.menu-avatar-pill {
     display: flex;
     align-items: center;
-}
-
-.avatars img,
-.avatar.more {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    margin-left: -8px;
-    border: 2px solid white;
-}
-
-.avatar.more {
-    background: #eee;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Date */
-.date-range {
-    background: #f6f4f3;
-    padding: 6px 10px;
-    border-radius: 10px;
-    font-size: 13px;
+    gap: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #fff;
+    height: 40px;
     cursor: pointer;
 }
 
-/* Icon buttons */
-.icon-btn {
+.menu-avatar-pill i {
+    font-size: 18px;
+}
+
+.menu-avatar-pill img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.add-circle-btn {
     width: 34px;
     height: 34px;
-    border-radius: 10px;
-    background: #f6f4f3;
+    border-radius: 50%;
+    background: #ff3b6b;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* HEADER CARD */
+.header-card {
+    background: white;
+    border-radius: 28px;
+    padding: 20px 24px;
+    margin-bottom: 25px;
+}
+
+/* Chips */
+.chips {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chip {
+    background: white;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1.5px solid #D3D3D3;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.chip img {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+/*Topbar c logo*/
+.c-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.5px solid #D3D3D3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.c-logo span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter, sans-serif;
+}
+
+/* Header icons */
+.header-icons {
+    display: flex;
+    gap: 10px;
+}
+.icon-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.5px solid #D3D3D3;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+/* New report */
+.new-report {
+    font-size: 32px;
+    font-weight: 600;
+    color: #cfcfcf;
+}
+
+.timeframe {
+    font-size: 14px;
+    color: #444;
+}
+
+.form-check {
+    margin-right: 2px;
+}
+
+.date-range {
+    background: #f6f4f3;
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     cursor: pointer;
 }
 
 .main-content {
     padding-left: 20px;
+}
+
+/*Revenue left*/
+.revenue-section {
+    margin-top: 20px;
+}
+
+.revenue-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.revenue-amount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-amount {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.decimal {
+    font-size: 32px;
+    color: #aaa;
+    margin-left: -6px;
+}
+
+.badge-up {
+    background: #ffe9ef;
+    color: #ff3b6b;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-pink {
+    background: #ff3b6b;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.revenue-sub {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #777;
+}
+
+/*Stat cards (Top sales & Best deal)*/
+.stat-card {
+    width: 120px;
+    height: 90px;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.stat-card.light {
+    background: #fff;
+    border: 1.5px solid #D3D3D3;
+    margin-top: 4px;
+}
+
+.stat-card.dark {
+    background: #111;
+    color: white;
+    margin-top: 4px;
+}
+
+.card-title {
+    font-size: 13px;
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-value {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+.card-user {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.card-user img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.arrow {
+    margin-left: auto;
+    background: #f6f4f3;
+    padding: 1px 6px;
+    border-radius: 5px;
+    color: black;
+}
+
+/*Mini cards (Deals, Value, Win rate)*/
+.mini-card {
+    width: 90px;
+    height: 90px;
+    padding: 6px;
+    border-radius: 12px;
+    background: #fff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   /* 🔥 vertical centering */
+}
+
+.outline-grey{
+    border: 1.5px solid #D3D3D3;
+    margin-top: 4px;
+}
+
+.mini-title {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.mini-pill {
+    background: #D3D3D3;
+    padding: 1px 2px;
+    border-radius: 25px;
+    font-weight: 500;
+    color: white;
+    width: 40px;
+    height: 23px;
+    font-size: 14px;
+}
+
+.mini-pill.pink {
+    background: #ff3b6b;
+    color: white;
+}
+
+.outline-pink {
+    border: 1.5px solid #ff3b6b;
+    margin-top: 4px;
+}
+
+.mini-foot {
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+/*Wrapper (pill row)*/
+.contribution-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.contribution-bar {
+    flex: 9;
+    padding: 3px;
+    background: #f3f3f3;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    min-width: 0;
+}
+
+
+/*Each contribution item*/
+.contrib-item {
+    background: #fff;
+    border-radius: 999px;
+    padding: 5px 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 13px;
+    min-width: 0;
+}
+
+.w-lg { flex: 3.5; }
+.w-md { flex: 2.8; }
+.w-sm { flex: 2.1; }
+.w-xs { flex: 1.6; }
+
+.contrib-item img,
+.circle-logo {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+.circle-logo {
+    background: #000;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Text Styles*/
+.amount {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.percent {
+    margin-left: auto;
+    font-size: 12px;
+    color: #777;
+    white-space: nowrap;
+}
+
+
+/*Details button (black pill)*/
+.details-btn {
+    flex: 1;
+    height: 40px;
+
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+
+    font-size: 13px;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
